@@ -27,12 +27,14 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="css/cyphre.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <body class="page-top" id="page-top" ng-controller="MainCtrl as main">
     <!-- Navigation -->
@@ -47,7 +49,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img alt="Brand" height="50" src="https://cyphre.com/themes/svy/core/img/logo.svg">
+                    <img alt="Brand" height="44" src="https://cyphre.com/themes/svy/core/img/logo.svg">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,8 +62,8 @@
                     <li><a class="page-scroll" href="#contact">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="btn btn-redirect" href="https://cyphre.com/index.php">Login</a></li>
-                    <li><a class="btn btn-redirect" href="https://cyphre.com/index.php/register/">Signup</a></li>
+                    <li><a class="btn btn-login" href="https://cyphre.com/index.php">Login</a></li>
+                    <li><a class="btn btn-signup" href="https://cyphre.com/index.php/register/">Sign up</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -71,7 +73,6 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <!-- <div class="intro-lead-in">{{main.welcome}}</div> -->
                 <div class="intro-heading">{{main.heading}}</div>
                 <a href="#about" class="page-scroll btn btn-xl">{{main.more}}</a>
             </div>
@@ -90,7 +91,7 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://twitter.com/GetCyphre"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="https://www.facebook.com/pages/Cyphre/424876137665559"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
@@ -123,5 +124,6 @@
 
     <!-- Angular App -->
     <script type="text/javascript" src="js/cyphre.js"></script>
+
 </body>
 </html>

@@ -62,7 +62,54 @@ h6 {
 .bg-darkest-gray {
   background-color: #222222;
 }
-.btn-redirect {
+.btn-login {
+  color: white;
+  background-color: transparent;
+  border-color: #fcc40b;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-right: 5px;
+  font-size: 14px;
+  padding: 20px 40px;
+}
+.btn-login:hover,
+.btn-login:focus,
+.btn-login:active,
+.btn-login.active,
+.open .dropdown-toggle.btn-login {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #c79a02;
+}
+.btn-login:active,
+.btn-login.active,
+.open .dropdown-toggle.btn-login {
+  background-image: none;
+}
+.btn-login.disabled,
+.btn-login[disabled],
+fieldset[disabled] .btn-login,
+.btn-login.disabled:hover,
+.btn-login[disabled]:hover,
+fieldset[disabled] .btn-login:hover,
+.btn-login.disabled:focus,
+.btn-login[disabled]:focus,
+fieldset[disabled] .btn-login:focus,
+.btn-login.disabled:active,
+.btn-login[disabled]:active,
+fieldset[disabled] .btn-login:active,
+.btn-login.disabled.active,
+.btn-login[disabled].active,
+fieldset[disabled] .btn-login.active {
+  background-color: transparent;
+  border-color: #fcc40b;
+}
+.btn-login .badge {
+  color: transparent;
+  background-color: white;
+}
+.btn-signup {
   color: white;
   background-color: #fcc40b;
   border-color: #fcc40b;
@@ -73,39 +120,39 @@ h6 {
   font-size: 14px;
   padding: 20px 40px;
 }
-.btn-redirect:hover,
-.btn-redirect:focus,
-.btn-redirect:active,
-.btn-redirect.active,
-.open .dropdown-toggle.btn-redirect {
+.btn-signup:hover,
+.btn-signup:focus,
+.btn-signup:active,
+.btn-signup.active,
+.open .dropdown-toggle.btn-signup {
   color: white;
   background-color: #d1a103;
   border-color: #c79a02;
 }
-.btn-redirect:active,
-.btn-redirect.active,
-.open .dropdown-toggle.btn-redirect {
+.btn-signup:active,
+.btn-signup.active,
+.open .dropdown-toggle.btn-signup {
   background-image: none;
 }
-.btn-redirect.disabled,
-.btn-redirect[disabled],
-fieldset[disabled] .btn-redirect,
-.btn-redirect.disabled:hover,
-.btn-redirect[disabled]:hover,
-fieldset[disabled] .btn-redirect:hover,
-.btn-redirect.disabled:focus,
-.btn-redirect[disabled]:focus,
-fieldset[disabled] .btn-redirect:focus,
-.btn-redirect.disabled:active,
-.btn-redirect[disabled]:active,
-fieldset[disabled] .btn-redirect:active,
-.btn-redirect.disabled.active,
-.btn-redirect[disabled].active,
-fieldset[disabled] .btn-redirect.active {
+.btn-signup.disabled,
+.btn-signup[disabled],
+fieldset[disabled] .btn-signup,
+.btn-signup.disabled:hover,
+.btn-signup[disabled]:hover,
+fieldset[disabled] .btn-signup:hover,
+.btn-signup.disabled:focus,
+.btn-signup[disabled]:focus,
+fieldset[disabled] .btn-signup:focus,
+.btn-signup.disabled:active,
+.btn-signup[disabled]:active,
+fieldset[disabled] .btn-signup:active,
+.btn-signup.disabled.active,
+.btn-signup[disabled].active,
+fieldset[disabled] .btn-signup.active {
   background-color: #fcc40b;
   border-color: #fcc40b;
 }
-.btn-redirect .badge {
+.btn-signup .badge {
   color: #fcc40b;
   background-color: white;
 }
