@@ -2,13 +2,14 @@
 (function(window) {
     'use strict';
 
-    var hasClass,
-        addClass,
-        removeClass;
+    var hasClass;
+    var addClass;
+    var removeClass;
 
     function classReg(className) {
         return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
     }
+
     if ('classList' in document.documentElement) {
         hasClass = function(elem, c) {
             return elem.classList.contains(c);
@@ -32,10 +33,12 @@
             elem.className = elem.className.replace(classReg(c), ' ');
         };
     }
+
     function toggleClass(elem, c) {
         var fn = hasClass(elem, c) ? removeClass : addClass;
         fn(elem, c);
     }
+
     var classie = {
         // full names
         hasClass: hasClass,
@@ -48,6 +51,7 @@
         remove: removeClass,
         toggle: toggleClass
     };
+
     // transport
     if (typeof define === 'function' && define.amd) {
         define(classie);
