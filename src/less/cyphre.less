@@ -61,10 +61,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-login {
-    .button-variant(white; transparent; @brand-primary);
+    .button-variant(white; transparent; transparent);
     .heading-font;
     border-radius: 3px;
-    margin-right: 5px;
     font-size: 14px;
     padding: 20px 40px;
 }
@@ -73,9 +72,16 @@ h1, h2, h3, h4, h5, h6 {
     .button-variant(white; @brand-primary; @brand-primary);
     .heading-font;
     border-radius: 3px;
-    margin-right: 5px;
     font-size: 14px;
     padding: 20px 40px;
+}
+
+.btn-plan-select {
+    .heading-font;
+    padding: 8px 25px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: -5px;
 }
 
 // Restyled Primary Buttons
@@ -94,13 +100,21 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 40px;
 }
 
+.btn-panel-footer {
+    .button-variant(white; @brand-primary; @brand-primary);
+    .heading-font;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 10px 50px;
+}
+
 // Custom Navigation Bar
 .navbar-default {
     background-color: @gray-darkest;
     border-color: transparent;
     .navbar-brand {
         margin-left: 10px;
-        padding: 0 15px;
+        padding: 3px 15px;
         color: white;
         .open-sans;
         &:hover,
@@ -114,14 +128,14 @@ h1, h2, h3, h4, h5, h6 {
         border-color: fade(white, 2%);
     }
     .navbar-toggle {
-        background-color: transparent;
-        border-color: white;
+        background-color: @brand-primary;
+        border-color: transparent;
         .icon-bar {
             background-color: white;
         }
         &:hover,
         &:focus {
-            background-color: @brand-primary;
+            background-color: darken(@brand-primary, 10%);
         }
     }
     .nav {
@@ -177,9 +191,6 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-image: url('../img/Background.png');
-    // background-image: url('../img/blur_green_1920.png');
-    // background-image: url('../img/header-bg.jpg');
-    // background-image: url('../img/workstation.jpeg');
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -255,6 +266,59 @@ section {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+}
+
+// Pricing Section
+section#pricing {
+    .plan {
+        padding: 20px;
+        margin-left:0px;
+        //background-color: @gray-lighter;
+        -moz-border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+    }
+    .pricing-table {
+        margin-left:0px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: #f3f3f3;
+        -moz-box-shadow: 0 0 6px 2px @gray-lighter;
+        -webkit-box-shadow: 0 0 6px 2px @gray-lighter;
+        box-shadow: 0 0 6px 2px @gray-lighter;
+        .plan {
+            margin-left:0px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: white;
+            -moz-box-shadow: 0 0 6px 2px @gray-lighter;
+            -webkit-box-shadow: 0 0 6px 2px @gray-lighter;
+            box-shadow: 0 0 6px 2px @gray-lighter;
+            ul {
+                list-style: none;
+                margin: 0;
+                -moz-border-radius: 0 0 5px 5px;
+                -webkit-border-radius: 0 0 5px 5px;
+                border-radius: 0 0 5px 5px;
+                li.plan-feature {
+                    padding: 15px 10px;
+                    border-bottom: 1px solid #c5c8c0;
+                    text-align: center;
+                }
+            }
+            .plan-name-gold {
+                padding: 20px;
+                color: @gray-darkest;
+                background-color: @brand-primary;
+                -moz-border-radius: 5px 5px 0 0;
+                -webkit-border-radius: 5px 5px 0 0;
+                border-radius: 5px 5px 0 0;
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
 }
 
 // Team Section
