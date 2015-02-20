@@ -1,6 +1,8 @@
 @import "variables.less";
 @import "mixins.less";
 
+@import "buttons.less";
+
 // Global Components
 body {
     overflow-x: hidden;
@@ -58,54 +60,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-darkest-gray {
     background-color: @gray-darkest;
-}
-
-.btn-login {
-    .button-variant(white; transparent; transparent);
-    .heading-font;
-    border-radius: 3px;
-    font-size: 14px;
-    padding: 20px 40px;
-}
-
-.btn-signup {
-    .button-variant(white; @brand-primary; @brand-primary);
-    .heading-font;
-    border-radius: 3px;
-    font-size: 14px;
-    padding: 20px 40px;
-}
-
-.btn-plan-select {
-    .heading-font;
-    padding: 8px 25px;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: -5px;
-}
-
-// Restyled Primary Buttons
-.btn-primary {
-    .button-variant(white; transparent; white);
-    .heading-font;
-    font-weight: 700;
-}
-
-.btn-xl {
-    .button-variant(white; @brand-primary; @brand-primary);
-    .heading-font;
-    font-weight: 700;
-    border-radius: 3px;
-    font-size: 18px;
-    padding: 20px 40px;
-}
-
-.btn-panel-footer {
-    .button-variant(white; @brand-primary; @brand-primary);
-    .heading-font;
-    border-radius: 50px;
-    font-size: 14px;
-    padding: 10px 50px;
 }
 
 // Custom Navigation Bar
@@ -321,24 +275,6 @@ section#pricing {
     }
 }
 
-// Team Section
-.team-member {
-    text-align: center;
-    margin-bottom: 50px;
-    img {
-        margin: 0 auto;
-        border: 7px solid white;
-    }
-    h4 {
-        margin-top: 25px;
-        margin-bottom: 0;
-        text-transform: none;
-    }
-    p {
-        margin-top: 0;
-    }
-}
-
 // Contact Section
 section#contact {
     background-color: @gray-darkest;
@@ -431,13 +367,6 @@ ul.social-buttons {
             }
         }
     }
-}
-
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-    outline: none;
 }
 
 // Highlight Color Customization

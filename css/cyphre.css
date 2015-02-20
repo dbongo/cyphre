@@ -10,58 +10,6 @@
   font-family: "Titillium Web", sans-serif;
   font-weight: 300;
 }
-body {
-  overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.text-muted {
-  color: #777777;
-}
-.text-primary {
-  color: #fcc40b;
-}
-p {
-  font-size: 14px;
-  line-height: 1.75;
-}
-p.large {
-  font-size: 16px;
-}
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-  outline: none;
-}
-a {
-  color: #fcc40b;
-}
-a:hover,
-a:focus,
-a:active,
-a.active {
-  color: #d1a103;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.img-centered {
-  margin: 0 auto;
-}
-.bg-light-gray {
-  background-color: #f7f7f7;
-}
-.bg-darkest-gray {
-  background-color: #222222;
-}
 .btn-login {
   color: white;
   background-color: transparent;
@@ -299,6 +247,64 @@ fieldset[disabled] .btn-panel-footer.active {
   color: #fcc40b;
   background-color: white;
 }
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.text-muted {
+  color: #777777;
+}
+.text-primary {
+  color: #fcc40b;
+}
+p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+p.large {
+  font-size: 16px;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+}
+a {
+  color: #fcc40b;
+}
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #d1a103;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.img-centered {
+  margin: 0 auto;
+}
+.bg-light-gray {
+  background-color: #f7f7f7;
+}
+.bg-darkest-gray {
+  background-color: #222222;
+}
 .navbar-default {
   background-color: #222222;
   border-color: transparent;
@@ -499,22 +505,6 @@ section#pricing .pricing-table .plan .plan-name-gold {
 section#pricing .pricing-table .plan .plan-name-gold span {
   font-size: 20px;
 }
-.team-member {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.team-member img {
-  margin: 0 auto;
-  border: 7px solid white;
-}
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-.team-member p {
-  margin-top: 0;
-}
 section#contact {
   background-color: #222222;
   background-image: url('../img/map-image.png');
@@ -608,12 +598,6 @@ ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #fcc40b;
-}
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-  outline: none;
 }
 ::-moz-selection {
   text-shadow: none;
