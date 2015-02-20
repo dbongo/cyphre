@@ -1,25 +1,33 @@
 .btn-login {
-    .button-variant(white; transparent; transparent);
+    .button-variant(white; transparent; @brand-primary);
     .heading-font;
     border-radius: 3px;
     font-size: 14px;
-    padding: 20px 40px;
+    padding: 20px 50px;
 }
 
 .btn-signup {
-    .button-variant(white; @brand-primary; @brand-primary);
+    .button-variant(white; transparent; @brand-primary);
     .heading-font;
     border-radius: 3px;
     font-size: 14px;
-    padding: 20px 40px;
+    padding: 20px 50px;
 }
 
-.btn-plan-select {
+.btn-panel-starter {
+    .button-variant(@gray-darkest; @gray-lighter; @gray-default;);
     .heading-font;
-    padding: 8px 25px;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: -5px;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 10px 50px;
+}
+
+.btn-panel-plus {
+    .button-variant(white; @brand-primary; @brand-primary);
+    .heading-font;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 10px 50px;
 }
 
 // Restyled Primary Buttons
@@ -36,14 +44,6 @@
     border-radius: 3px;
     font-size: 18px;
     padding: 20px 40px;
-}
-
-.btn-panel-footer {
-    .button-variant(white; @brand-primary; @brand-primary);
-    .heading-font;
-    border-radius: 50px;
-    font-size: 14px;
-    padding: 10px 50px;
 }
 
 .btn:focus,

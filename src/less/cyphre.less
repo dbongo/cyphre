@@ -2,6 +2,7 @@
 @import "mixins.less";
 
 @import "buttons.less";
+@import "panels.less";
 
 // Global Components
 body {
@@ -82,14 +83,15 @@ h1, h2, h3, h4, h5, h6 {
         border-color: fade(white, 2%);
     }
     .navbar-toggle {
-        background-color: @brand-primary;
-        border-color: transparent;
+        background-color: transparent;
+        border-color: white;
         .icon-bar {
             background-color: white;
         }
         &:hover,
         &:focus {
-            background-color: darken(@brand-primary, 10%);
+            background-color: darken(@gray-darkest, 5%);
+            border-color: transparent;
         }
     }
     .nav {
@@ -204,7 +206,7 @@ section {
         font-size: 16px;
         .serif-font;
         text-transform: none;
-        font-style: italic;
+        // font-style: italic;
         font-weight: 400;
         margin-bottom: 75px;
     }
@@ -224,107 +226,80 @@ section {
 
 // Pricing Section
 section#pricing {
-    .plan {
-        padding: 20px;
-        margin-left:0px;
-        //background-color: @gray-lighter;
-        -moz-border-radius: 5px 5px 0 0;
-        -webkit-border-radius: 5px 5px 0 0;
-        border-radius: 5px 5px 0 0;
-    }
-    .pricing-table {
-        margin-left:0px;
-        border-radius: 5px;
-        text-align: center;
-        background-color: #f3f3f3;
-        -moz-box-shadow: 0 0 6px 2px @gray-lighter;
-        -webkit-box-shadow: 0 0 6px 2px @gray-lighter;
-        box-shadow: 0 0 6px 2px @gray-lighter;
-        .plan {
-            margin-left:0px;
-            border-radius: 5px;
-            text-align: center;
-            background-color: white;
-            -moz-box-shadow: 0 0 6px 2px @gray-lighter;
-            -webkit-box-shadow: 0 0 6px 2px @gray-lighter;
-            box-shadow: 0 0 6px 2px @gray-lighter;
-            ul {
-                list-style: none;
-                margin: 0;
-                -moz-border-radius: 0 0 5px 5px;
-                -webkit-border-radius: 0 0 5px 5px;
-                border-radius: 0 0 5px 5px;
-                li.plan-feature {
-                    padding: 15px 10px;
-                    border-bottom: 1px solid #c5c8c0;
-                    text-align: center;
-                }
-            }
-            .plan-name-gold {
-                padding: 20px;
-                color: @gray-darkest;
-                background-color: @brand-primary;
-                -moz-border-radius: 5px 5px 0 0;
-                -webkit-border-radius: 5px 5px 0 0;
-                border-radius: 5px 5px 0 0;
-                span {
-                    font-size: 20px;
-                }
-            }
+    .price {
+        display: block;
+        font-size: 50px;
+        line-height: 50px;
+        sup {
+            top: -20px;
+            left: 2px;
+            font-size: 20px;
         }
+    }
+}
+
+// Business Section
+section#business {
+    .tab-content {
+        margin-top: 15px;
+
     }
 }
 
 // Contact Section
 section#contact {
-    background-color: @gray-darkest;
-    background-image: url('../img/map-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    .section-heading {
+	background-color: @gray-darkest;
+	background-image: url('../img/map-image.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	.section-heading {
+		color: white;
+	}
+    .section-subheading {
         color: white;
     }
-    .form-group {
-        margin-bottom: 25px;
-        input,
-        textarea {
-            padding: 20px;
-        }
-        input.form-control {
-            height: auto;
-        }
-        textarea.form-control {
-            height: 236px;
-        }
-    }
-    .form-control:focus {
-        border-color: @brand-primary;
-        box-shadow: none;
-    }
-    ::-webkit-input-placeholder {
-        .heading-font;
-        font-weight: 700;
-        color: @placeholder-text;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-        .heading-font;
-        font-weight: 700;
-        color: @placeholder-text;
-    }
-    ::-moz-placeholder {  /* Firefox 19+ */
-        .heading-font;
-        font-weight: 700;
-        color: @placeholder-text;
-    }
-    :-ms-input-placeholder {
-        .heading-font;
-        font-weight: 700;
-        color: @placeholder-text;
-    }
-    .text-danger {
-        color: @brand-danger;
-    }
+	.form-group {
+		margin-bottom: 25px;
+		input,
+		textarea {
+			padding: 20px;
+		}
+		input.form-control {
+			height: auto;
+		}
+		textarea.form-control {
+			height: 236px;
+		}
+	}
+	.form-control:focus {
+		border-color: @brand-primary;
+		box-shadow: none;
+	}
+	::-webkit-input-placeholder {
+	   .heading-font;
+	   font-weight: 700;
+	   color: @placeholder-text;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	   .heading-font;
+	   font-weight: 700;
+	   color: @placeholder-text;
+	}
+	::-moz-placeholder {  /* Firefox 19+ */
+	   .heading-font;
+	   font-weight: 700;
+	   color: @placeholder-text;
+	}
+	:-ms-input-placeholder {
+	   .heading-font;
+	   font-weight: 700;
+	   color: @placeholder-text;
+	}
+	.text-danger {
+		color: @brand-danger;
+	}
 }
+
 
 // Footer
 footer {
